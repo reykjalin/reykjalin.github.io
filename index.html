@@ -1,1 +1,17 @@
-Hello world!
+<html>
+  <head></head>
+  <body>
+    <p id="status">Status: </p>
+  </body>
+</html>
+
+<script>
+  $.ajax({
+      url: "https://krey.is/",
+      type: 'GET',
+      success: function(res) {
+          console.log(res);
+          alert(res);
+      }
+  });
+</script>
