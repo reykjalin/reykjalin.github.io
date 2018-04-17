@@ -6,7 +6,7 @@
 	    crossorigin="anonymous"></script>
   </head>
   <body>
-    <p id="status">jQuery CDN Status: </p>
+    <p id="status">Checking status...</p>
   </body>
 </html>
 
@@ -16,12 +16,12 @@
       url: "https://krey.is/",
       type: 'GET',
       success: function(res) {
-        console.log(res);
-        alert(res);
+        console.log('success');
+	$('#status').innerHTML = 'Status: online';
       },
       error: function(res) {
-        console.log(res)
-        alert(res)
+	console.log('error');
+        $('#status').innerHTML = 'Status: offline';
       },
       timeout: 3000
     });
