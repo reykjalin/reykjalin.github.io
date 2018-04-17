@@ -6,12 +6,19 @@
 </html>
 
 <script>
-  $.ajax({
+  $(function() {
+    $.ajax({
       url: "https://krey.is/",
       type: 'GET',
       success: function(res) {
-          console.log(res);
-          alert(res);
-      }
+        console.log(res);
+        alert(res);
+      },
+      error: function(res) {
+        console.log(res)
+        alert(res)
+      },
+      timeout: 3000
+    });
   });
 </script>
