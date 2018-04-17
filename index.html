@@ -1,4 +1,4 @@
-<html>
+ <html>
   <head>
     <script
 	    src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -6,7 +6,13 @@
 	    crossorigin="anonymous"></script>
   </head>
   <body>
-    <p id="status">Checking status...</p>
+    <h1>krey.is status checks</h1>
+    <a href="https://krey.is">krey.is</a><p id="status">: checking status...</p>
+    <a href="https://dl.krey.is">dl.krey.is</a><p id="status">: checking status...</p>
+    <a href="https://plex.krey.is">plex.krey.is</a><p id="status">: checking status...</p>
+    <a href="https://vault.krey.is">vault.krey.is</a><p id="status">: checking status...</p>
+    <a href="https://cockpit.krey.is">cockpit.krey.is</a><p id="status">: checking status...</p>
+    <a href="https://cloud.krey.is">cloud.krey.is</a><p id="status">: checking status...</p>
   </body>
 </html>
 
@@ -17,11 +23,11 @@
       type: 'GET',
       success: function(res) {
         console.log('success');
-	$('#status').innerHTML = 'Status: online';
+	      document.getElementById('status').innerHTML = ' status: online';
       },
       error: function(res) {
-	console.log('error');
-        $('#status').innerHTML = 'Status: offline';
+	      console.log('error');
+        document.getElementById('status').innerHTML = ' status: offline';
       },
       timeout: 3000
     });
