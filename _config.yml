@@ -5,7 +5,7 @@ title: krey
 twitter_username: kreykjalin
 github_username: reykjalin
 linkedin_username: kristoferrt
-rss: rss
+# rss: rss
 
 # Nav bar pages
 header_pages:
@@ -16,5 +16,5 @@ header_pages:
 # show_excerpts: true
 
 # Enable comments
-disqus:
-  shortname: reykjal-in
+# disqus:
+#   shortname: reykjal-in
