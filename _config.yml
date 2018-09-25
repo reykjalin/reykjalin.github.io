@@ -14,3 +14,7 @@ header_pages:
 
 # Show post excerpts
 # show_excerpts: true
+
+# Enable comments
+disqus:
+  shortname: reykjal-in.disqus.com
