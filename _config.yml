@@ -5,3 +5,10 @@ twitter_username: kreykjalin
 github_username: reykjalin
 linkedin_username: kristoferrt
 rss: rss
+
+# Nav bar pages
+header_pages:
+  - about.md
+
+# Show post excerpts
+show_excerpts: true
