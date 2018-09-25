@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: Bad Scheme Headers with Seafile behind jwilder/nginx-proxy
 ---
 
