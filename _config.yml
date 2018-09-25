@@ -11,4 +11,4 @@ header_pages:
   - about.md
 
 # Show post excerpts
-show_excerpts: true
+# show_excerpts: true
