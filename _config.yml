@@ -1,4 +1,5 @@
 theme: minima
+title: krey
 
 # Social networks
 twitter_username: kreykjalin
@@ -8,6 +9,7 @@ rss: rss
 
 # Nav bar pages
 header_pages:
+  - projects.md
   - about.md
 
 # Show post excerpts
