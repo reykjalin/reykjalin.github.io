@@ -1,5 +1,9 @@
 theme: minima
 title: reykjal.in
+email: kris@reykjal.in
+description: >
+  A blog to write down my thoughts on issues I encounter in my work and
+  personal projects.
 
 # Social networks
 twitter_username: kreykjalin
