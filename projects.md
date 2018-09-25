@@ -3,8 +3,6 @@ title: Projects
 layout: page
 ---
 
----
-
 ## Personal projects 
 
 ### doWeekly  
@@ -22,8 +20,6 @@ I'm using C# to develop the solutions, exposing those with an API endpoint devel
 [tools](https://github.com/reykjalin/tools) includes various super short command line tools I've made at some point for some purpose.
 Developed using Bash and Python.
 
----
-
 ## School projects  
 
 ### httpd  
@@ -38,3 +34,9 @@ Developed using the Arduino subset of C++.
 [Data Processing](https://github.com/reykjalin/Gagnavinnsla) was a class I took that dealt with SQL and Python, and how to use those two tools to process data effectively.
 The repository contains various different projects.
 Developed using Python, PyQt, and SQL.
+
+<style>
+h2 {
+    border-bottom: 1px solid #e8e8e8;
+}
+</style>
