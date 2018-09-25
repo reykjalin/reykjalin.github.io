@@ -22,3 +22,6 @@ header_pages:
 # Enable comments
 # disqus:
 #   shortname: reykjal-in
+
+plugins:
+  - jekyll-feed
