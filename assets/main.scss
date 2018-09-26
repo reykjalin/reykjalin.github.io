@@ -6,3 +6,23 @@ $content-width: 1000px;
 $on-laptop: 1000px;
 
 @import "minima";
+
+footer {
+    background-color: #424242;
+}
+
+.footer-heading {
+    color: white;
+}
+
+.footer-col-wrapper, .footer-col-wrapper svg {
+    color: lightgray;
+}
+
+.footer-col-wrapper a {
+    color: lightskyblue;
+}
+
+.footer-col-wrapper a:visited {
+    color: #009dff;
+}
