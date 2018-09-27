@@ -2,6 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
+
 $content-width: 1000px;
 $on-laptop: 1000px;
 $base-font-family: -apple-system, BlinkMacSystemFont, "Fira Mono", "Courier New", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
