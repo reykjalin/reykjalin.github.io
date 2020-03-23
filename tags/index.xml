@@ -2,120 +2,120 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on thoughts on things</title>
-    <link>https://reykjalin.github.io/tags/</link>
+    <link>https://www.thorlaksson.com/tags/</link>
     <description>Recent content in Tags on thoughts on things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Feb 2020 06:13:59 +0000</lastBuildDate>
     
-	<atom:link href="https://reykjalin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.thorlaksson.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>f#</title>
-      <link>https://reykjalin.github.io/tags/f#/</link>
+      <link>https://www.thorlaksson.com/tags/f#/</link>
       <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/f#/</guid>
+      <guid>https://www.thorlaksson.com/tags/f#/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fable</title>
-      <link>https://reykjalin.github.io/tags/fable/</link>
+      <link>https://www.thorlaksson.com/tags/fable/</link>
       <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/fable/</guid>
+      <guid>https://www.thorlaksson.com/tags/fable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>fsharp</title>
-      <link>https://reykjalin.github.io/tags/fsharp/</link>
+      <link>https://www.thorlaksson.com/tags/fsharp/</link>
       <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/fsharp/</guid>
+      <guid>https://www.thorlaksson.com/tags/fsharp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>interop</title>
-      <link>https://reykjalin.github.io/tags/interop/</link>
+      <link>https://www.thorlaksson.com/tags/interop/</link>
       <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/interop/</guid>
+      <guid>https://www.thorlaksson.com/tags/interop/</guid>
       <description></description>
     </item>
     
     <item>
       <title>javascript</title>
-      <link>https://reykjalin.github.io/tags/javascript/</link>
+      <link>https://www.thorlaksson.com/tags/javascript/</link>
       <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/javascript/</guid>
+      <guid>https://www.thorlaksson.com/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>https://reykjalin.github.io/tags/programming/</link>
+      <link>https://www.thorlaksson.com/tags/programming/</link>
       <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/programming/</guid>
+      <guid>https://www.thorlaksson.com/tags/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>typescript</title>
-      <link>https://reykjalin.github.io/tags/typescript/</link>
+      <link>https://www.thorlaksson.com/tags/typescript/</link>
       <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/typescript/</guid>
+      <guid>https://www.thorlaksson.com/tags/typescript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>editors</title>
-      <link>https://reykjalin.github.io/tags/editors/</link>
+      <link>https://www.thorlaksson.com/tags/editors/</link>
       <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/editors/</guid>
+      <guid>https://www.thorlaksson.com/tags/editors/</guid>
       <description></description>
     </item>
     
     <item>
       <title>emacs</title>
-      <link>https://reykjalin.github.io/tags/emacs/</link>
+      <link>https://www.thorlaksson.com/tags/emacs/</link>
       <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/emacs/</guid>
+      <guid>https://www.thorlaksson.com/tags/emacs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vim</title>
-      <link>https://reykjalin.github.io/tags/vim/</link>
+      <link>https://www.thorlaksson.com/tags/vim/</link>
       <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/vim/</guid>
+      <guid>https://www.thorlaksson.com/tags/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vscode</title>
-      <link>https://reykjalin.github.io/tags/vscode/</link>
+      <link>https://www.thorlaksson.com/tags/vscode/</link>
       <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/vscode/</guid>
+      <guid>https://www.thorlaksson.com/tags/vscode/</guid>
       <description></description>
     </item>
     
     <item>
       <title>xi</title>
-      <link>https://reykjalin.github.io/tags/xi/</link>
+      <link>https://www.thorlaksson.com/tags/xi/</link>
       <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/tags/xi/</guid>
+      <guid>https://www.thorlaksson.com/tags/xi/</guid>
       <description></description>
     </item>
     

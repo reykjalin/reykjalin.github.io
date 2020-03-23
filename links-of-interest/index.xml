@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Links of interest on thoughts on things</title>
-    <link>https://reykjalin.github.io/links-of-interest/</link>
+    <link>https://www.thorlaksson.com/links-of-interest/</link>
     <description>Recent content in Links of interest on thoughts on things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Mar 2020 07:19:45 +0000</lastBuildDate>
     
-	<atom:link href="https://reykjalin.github.io/links-of-interest/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.thorlaksson.com/links-of-interest/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

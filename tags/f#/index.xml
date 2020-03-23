@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>f# on thoughts on things</title>
-    <link>https://reykjalin.github.io/tags/f#/</link>
+    <link>https://www.thorlaksson.com/tags/f#/</link>
     <description>Recent content in f# on thoughts on things</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Feb 2020 06:13:59 +0000</lastBuildDate>
     
-	<atom:link href="https://reykjalin.github.io/tags/f#/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.thorlaksson.com/tags/f#/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Calling Fable from TypeScript</title>
-      <link>https://reykjalin.github.io/posts/calling-fable-from-typescript/</link>
+      <link>https://www.thorlaksson.com/posts/calling-fable-from-typescript/</link>
       <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
       
-      <guid>https://reykjalin.github.io/posts/calling-fable-from-typescript/</guid>
+      <guid>https://www.thorlaksson.com/posts/calling-fable-from-typescript/</guid>
       <description>Fable is a framework used to compile F# code to JavaScript. I&amp;rsquo;ve been using it in a TypeScript project — actually going so far as using F# for most of the code.
 Fable has a really nice interface that allows easy interoperability with JavaScript, although it can take some time to fully grasp how to use the interface.
 Unfortunately this interface isn&amp;rsquo;t really well documented. They do have some introductory instructions there, but nothing really comprehensive.</description>
