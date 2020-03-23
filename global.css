@@ -4,15 +4,6 @@ html {
     line-height: 1.5rem;
 }
 
-@media (max-width: 599px) {
-    .column {
-        flex-basis: 100% !important;
-    }
-    .row {
-        margin: 1rem 0;
-    }
-}
-
 body {
     max-width: 32rem;
     width: calc(100% - 2rem);
@@ -92,8 +83,22 @@ hr {
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+}
+
+.column {
+    margin: 0 1rem;
+}
+
+@media (max-width: 599px) {
+    .column {
+        flex-basis: 100% !important;
+        margin: 0;
+    }
+    .row {
+        margin: 1rem 0;
+        flex-wrap: wrap;
+    }
 }
 
