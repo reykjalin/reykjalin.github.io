@@ -62,6 +62,10 @@ hr {
     margin-bottom: 3rem;
 }
 
+.big-text {
+    font-size: larger;
+}
+
 .post-meta {
     display: flex;
     flex-direction: row;
