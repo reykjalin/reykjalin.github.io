@@ -1,12 +1,15 @@
 html {
     font-family: serif;
-    font-size: 300%;
+    font-size: 125%;
     line-height: 1.5rem;
 }
 
-@media (min-width: 1000px) {
-    html {
-        font-size: 125%;
+@media (max-width: 599px) {
+    .column {
+        flex-basis: 100% !important;
+    }
+    .row {
+        margin: 1rem 0;
     }
 }
 
@@ -85,3 +88,12 @@ hr {
 .text-align-center {
     text-align: center;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
