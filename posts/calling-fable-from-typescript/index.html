@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+    Calling Fable from TypeScript &ndash; thoughts on things
+</title>
+
+        <link rel="stylesheet" href="/global.css"/>
+        <link rel="stylesheet" href="/syntax.css"/>
+    </head>
+    
+<header>
+    <nav class="site-nav">
+        <ul>
+            <li><a href="/">home</a>
+            
+            <li><a href="/about/">about</a></li>
+            
+            <li><a href="/posts/">posts</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+    <body>
+        
+        
+<main>
+    <article>
+        
+        <header>
+            <h1>Calling Fable from TypeScript</h1>
+            <p class="post-meta">
+                <small>&#9719; 4 min.</small>
+                <small>Published: Feb 5, 2020</small>
+            </p>
+        </header>
+        
+
+        <p><a href="https://fable.io/">Fable</a> is a framework used to compile F# code to JavaScript. I&rsquo;ve been using it in a <a href="https://www.typescriptlang.org/">TypeScript</a> project — actually going so far as using F# for most of the code.</p>
+<p>Fable has a really nice interface that allows easy interoperability with JavaScript, although it can take some time to fully grasp how to use the interface.</p>
+<p>Unfortunately this interface <a href="https://fable.io/docs/communicate/fable-from-js.html">isn&rsquo;t really well documented</a>. They do have some introductory instructions there, but nothing really comprehensive.</p>
+<p>While using Fable in my project I had a really hard time figuring out how to call the compiled F# code from my TypeScript project, even going so far as converting the project to JavaScript while I was figuring this out because I <em>really</em> wanted to use F# instead of TypeScript.</p>
+<p>So, without further ado, let me explain <em>how</em> you go about importing your compiled F# code into your TypeScript project!</p>
+<h2 id="my-interpretation-of-the-documentation">My interpretation of the documentation</h2>
+<p>After reading the documentation I thought I should import the Fable code into <code>index.ts</code> with an import command like <code>import { helloWorld } from 'fsharp/helloWorld.fs'</code> and a corresponding <a href="https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html">declaration file</a>, but that doesn&rsquo;t really work; you can&rsquo;t import F# code directly into TypeScript, or any non-TypeScript code for that matter.</p>
+<p>To import non-TypeScript code into your TypeScript project, you need a declaration file, but before getting to that I want to talk about project folder structure. This is because the declaration file itself isn&rsquo;t enough, it has to be <strong>in the right location</strong>.</p>
+<h2 id="project-folder-structure">Project folder structure</h2>
+<p>Lets assume your project folder looks something like this:</p>
+<pre><code>project/
+|- src/
+  |- index.ts
+  |- fsharp/
+    |- helloWorld.fs
+    |- helloWorld.fsproj
+</code></pre><p>And let&rsquo;s assume you&rsquo;ve set up your compilers such that the compiled output looks like this:</p>
+<pre><code>project/
+|- out/
+  |- index.js
+  |- fsharp/
+    |- helloWorld.js
+</code></pre><p>To be able to import your F# code into your TypeScript project, you need to think about the <strong>output</strong> folder structure, and subsequently where you should put your declaration files.</p>
+<p>You always need to think about the end result; the compiled code will always be pure JavaScript, and thus you need to think as if you&rsquo;re working in JavaScript.</p>
+<p>Assume for a moment that you&rsquo;re the one writing the code in the compiled output <code>out/index.js</code>. If you wanted to use the code from <code>out/fsharp/helloWorld.js</code> you&rsquo;d import it with <code>import { helloWorld } from 'fsharp/helloWorld.js'</code>. Because of this, we need the import in <code>src/index.ts</code> to be that exact import.</p>
+<p>The easiest way to achieve this is to have the source directory mirror the structure of the output directory. Take a look at the example I outlined above again, here, in its entirety:</p>
+<pre><code>project/
+|- out/
+  |- index.js
+  |- fsharp
+    |- helloWorld.js
+|- src/
+  |- index.ts
+  |- fsharp/
+    |- helloWorld.fs
+    |- helloWorld.fsproj
+</code></pre><p>You&rsquo;ll see that the <code>src/</code> and <code>out/</code> directories look the same, aside from the F# specific <code>helloWorld.fsproj</code>.</p>
+<h2 id="where-to-put-your-declaration-files">Where to put your declaration files</h2>
+<p>With the mirrored folder structure in mind, we put the declaration file somewhere that will make the import from <code>src/index.ts</code> work for the compiled version of the JavaScript. In this case that would be in <code>src/fsharp</code>.</p>
+<p>We also need to make sure that the name of the declaration file fits the import. Remember that the compiled F# code will live in <code>out/fsharp/helloWorld.js</code>. For this reason we&rsquo;ll call the declaration file <code>helloWorld.js.d.ts</code> and save it in <code>src/fsharp</code>:</p>
+<pre><code>project/
+|- out/
+  |- index.js
+  |- fsharp
+    |- helloWorld.js
+|- src/
+  |- index.ts
+  |- fsharp/
+    |- helloWorld.js.d.ts
+    |- helloWorld.fs
+    |- helloWorld.fsproj
+</code></pre><p>You can think of the declaration file name as <code>&lt;import_path&gt;.js.d.ts</code>.</p>
+<h2 id="what-should-you-put-in-your-declaration-file">What should you put in your declaration file</h2>
+<p>This is another part where the documentation fails us. Lets assume your <code>src/fsharp/helloWorld.fs</code> file looks like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fsharp" data-lang="fsharp"><span class="c1">// helloWorld.fs
+</span><span class="c1"></span>
+<span class="k">module</span> <span class="nn">Hello</span>
+
+<span class="k">let</span> <span class="nv">helloWorld</span> <span class="o">(</span><span class="n">name</span><span class="o">:</span> <span class="kt">string</span><span class="o">):</span> <span class="kt">string</span> <span class="o">=</span>
+    <span class="n">sprintf</span> <span class="s">&#34;Hello, %s!&#34;</span> <span class="n">name</span></code></pre></div>
+<p>Based on the documentation, the declaration file for this <code>helloWorld.fs</code> should look something like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="cm">/** helloWorld.js.d.ts */</span>
+
+<span class="kr">declare</span> <span class="nx">module</span> <span class="s2">&#34;helloWorld.js&#34;</span> <span class="p">{</span>
+    <span class="kd">function</span> <span class="nx">helloWorld</span><span class="p">(</span> <span class="nx">name</span>: <span class="kt">string</span> <span class="p">)</span><span class="o">:</span> <span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>However, I found that this didn&rsquo;t work for me <strong>at all</strong>. Nothing. Nada. The TypeScript compiler simply told me that <code>helloWorld.js is not a module</code>.</p>
+<p>Instead, you&rsquo;ll want your declaration file to look like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="cm">/** helloWorld.js.d.ts */</span>
+
+<span class="kr">export</span> <span class="kd">function</span> <span class="nx">helloWorld</span><span class="p">(</span> <span class="nx">name</span>: <span class="kt">string</span> <span class="p">)</span><span class="o">:</span> <span class="kt">string</span><span class="p">;</span>
+</code></pre></div>
+<p>Simple, and to the point. Just export your function signature, and be done with it.</p>
+<p>If your code is a little more substantial, you have to change the declaration file accordingly:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fsharp" data-lang="fsharp"><span class="c1">// helloWorld.fs
+</span><span class="c1"></span>
+<span class="k">type</span> <span class="nc">HelloMessage</span> <span class="o">=</span> 
+    <span class="o">{</span> <span class="n">name</span><span class="o">:</span> <span class="kt">string</span>
+      <span class="n">message</span><span class="o">:</span> <span class="kt">string</span> <span class="o">}</span>
+
+<span class="k">let</span> <span class="nv">helloWorld</span> <span class="o">(</span><span class="n">msg</span><span class="o">:</span> <span class="n">HelloMessage</span><span class="o">):</span> <span class="kt">string</span> <span class="o">=</span>
+    <span class="n">sprintf</span> 
+        <span class="s">&#34;Hello %s! Your message is: %s&#34;</span>
+        <span class="n">msg</span><span class="o">.</span><span class="n">name</span>
+        <span class="n">msg</span><span class="o">.</span><span class="n">message</span></code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="cm">/** helloWorld.js.d.ts */</span>
+
+<span class="kr">export</span> <span class="kr">class</span> <span class="nx">HelloMessage</span> <span class="p">{</span>
+    <span class="nx">name</span>: <span class="kt">string</span><span class="p">;</span>
+    <span class="nx">message</span>: <span class="kt">string</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kr">export</span> <span class="kd">function</span> <span class="nx">helloWorld</span><span class="p">(</span> <span class="nx">msg</span>: <span class="kt">HelloMessage</span> <span class="p">)</span><span class="o">:</span> <span class="kt">string</span>
+</code></pre></div>
+<h2 id="in-conclusion">In conclusion</h2>
+<ol>
+<li>Mirror the compiled JavaScript folder hierarchy in your source folder.</li>
+<li>Put your declaration files in the same folder as your F# source files.</li>
+<li>Name your declaration files <code>&lt;f#_source_name&gt;.js.d.ts</code>.</li>
+<li>Import in TypeScript with <code>import { yourFunction } from 'path/to/fsharp/source.js'</code>.</li>
+</ol>
+
+    </article>
+</main>
+
+    </body>
+    <footer>
+    <hr />
+    <p>
+        <small>
+            Made with ♥ for the web |
+            <a href="/index.xml">rss</a>
+        </small>
+    </p>
+    <p><small>This website collects analytics via <a href="https://tot.goatcounter.com/">GoatCounter</a>. Analytics don't use cookies, and don't collect <a href="https://en.wikipedia.org/wiki/Personal_data">PII</a>.</small></p>
+</footer>
+
+</html>

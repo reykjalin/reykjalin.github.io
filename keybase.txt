@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/reykjalin
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://thorlaksson.com
+  * I am reykjalin (https://keybase.io/reykjalin) on keybase.
+  * I have a public key ASB5eBwlejeI2bPcF7EvIEwgHtIR98LNR_Bq7KOQF5_B4go
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012079781c257a3788d9b3dc17b12f204c201ed211f7c2cd47f06aeca390179fc1e20a",
+      "host": "keybase.io",
+      "kid": "012079781c257a3788d9b3dc17b12f204c201ed211f7c2cd47f06aeca390179fc1e20a",
+      "uid": "eb13fd5c23cf25678b5295a9261d4e19",
+      "username": "reykjalin"
+    },
+    "merkle_root": {
+      "ctime": 1576189238,
+      "hash": "b7f8f8f9c408e0d13c437514f2d0f0d2d65333245a2664cc1ea085a1dfffedc64ad669cefd067fa1b7d1cda7b3e03fb4e255cbffbcf15995aa0386cac2441852",
+      "hash_meta": "43993a565f86a458373a1d0899692f7e63271b7f6d671204f82795b049bfaf02",
+      "seqno": 13434823
+    },
+    "service": {
+      "entropy": "j9O3BvNI5gc8wyx0jms7x02t",
+      "hostname": "thorlaksson.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1576189247,
+  "expire_in": 504576000,
+  "prev": "6d83903c692de9267671fa9906dde05ed4776d117f623f2dae94fbdf4d87a61b",
+  "seqno": 21,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgeXgcJXo3iNmz3BexLyBMIB7SEffCzUfwauyjkBefweIKp3BheWxvYWTESpcCFcQgbYOQPGkt6SZ2cfqZBt3gXtR3bRF/Yj8trpT7302HphvEIMew1XXrTskWOcrpI5BmydnBm7CKgu2GfiK6NXh8+YEYAgHCo3NpZ8RAfofh5MbFqBldciGi6jJ39vzkL1ZTO+Bo2EHTx+ETf61hMa7bAqFsY4wbOek09gVOqolO6tr67OPZpeqtKYKKDahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBpk5tzi2z2ahFFg76YSKLobZcsoqitgpHUlPAkGM1Hzo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/reykjalin
+
+==================================================================

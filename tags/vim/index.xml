@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vim on thoughts on things</title>
+    <link>https://reykjalin.github.io/tags/vim/</link>
+    <description>Recent content in vim on thoughts on things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 27 Sep 2019 10:02:22 +0000</lastBuildDate>
+    
+	<atom:link href="https://reykjalin.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>It’s 2019. Why don’t we have good code editors?</title>
+      <link>https://reykjalin.github.io/posts/its-2019-why-dont-we-have-good-code-editors/</link>
+      <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/posts/its-2019-why-dont-we-have-good-code-editors/</guid>
+      <description>For a while now I’ve been trying to find the perfect code editor for me to do my work. And yes, I’m well aware that finding the perfect editor can certainly sound impossible, but should it be in considering today&amp;rsquo;s software? I don’t think so.
+To be clear, this rant (let’s be honest, this post definitely is a rant) does not propose any solutions for the issues I have with today’s code editors, instead it seeks to point out what it might take to create a good code editor.</description>
+    </item>
+    
+  </channel>
+</rss>

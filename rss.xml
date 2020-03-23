@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>home on My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content in home on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Dec 2019 18:12:41 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Calling Fable from TypeScript</title>
+      <link>http://example.org/posts/calling-fable-from-typescript/</link>
+      <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
+      
+      <guid>http://example.org/posts/calling-fable-from-typescript/</guid>
+      <description>Fable is a framework used to compile F# code to JavaScript. I&amp;rsquo;ve been using it in a TypeScript project — actually going so far as using F# for most of the code.
+Fable has a really nice interface that allows easy interoperability with JavaScript, although it can take some time to fully grasp how to use the interface.
+Unfortunately this interface isn&amp;rsquo;t really well documented. They do have some introductory instructions there, but nothing really comprehensive.</description>
+    </item>
+    
+    <item>
+      <title>It’s 2019. Why don’t we have good code editors?</title>
+      <link>http://example.org/posts/its-2019-why-dont-we-have-good-code-editors/</link>
+      <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
+      
+      <guid>http://example.org/posts/its-2019-why-dont-we-have-good-code-editors/</guid>
+      <description>For a while now I’ve been trying to find the perfect code editor for me to do my work. And yes, I’m well aware that finding the perfect editor can certainly sound impossible, but should it be in considering today&amp;rsquo;s software? I don’t think so.
+To be clear, this rant (let’s be honest, this post definitely is a rant) does not propose any solutions for the issues I have with today’s code editors, instead it seeks to point out what it might take to create a good code editor.</description>
+    </item>
+    
+  </channel>
+</rss>

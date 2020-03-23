@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+    It’s 2019. Why don’t we have good code editors? &ndash; thoughts on things
+</title>
+
+        <link rel="stylesheet" href="/global.css"/>
+        <link rel="stylesheet" href="/syntax.css"/>
+    </head>
+    
+<header>
+    <nav class="site-nav">
+        <ul>
+            <li><a href="/">home</a>
+            
+            <li><a href="/about/">about</a></li>
+            
+            <li><a href="/posts/">posts</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+    <body>
+        
+        
+<main>
+    <article>
+        
+        <header>
+            <h1>It’s 2019. Why don’t we have good code editors?</h1>
+            <p class="post-meta">
+                <small>&#9719; 7 min.</small>
+                <small>Published: Sep 27, 2019</small>
+            </p>
+        </header>
+        
+
+        <p>For a while now I’ve been trying to find the perfect code editor for me to do my work. And yes, I’m well aware that finding the perfect editor can certainly <em>sound</em> impossible, but should it be in considering today&rsquo;s software? I don’t think so.</p>
+<p>To be clear, this rant (let’s be honest, this post definitely <em>is</em> a rant) does not propose any solutions for the issues I have with today’s code editors, instead it seeks to point out what it might take to create a good code editor.</p>
+<p>I’d also like to point out we have a lot of great text editors! Just not text editors that are also great <em>code</em> editors.</p>
+<h2 id="my-frustrations-with-todays-editors">My frustrations with today’s editors</h2>
+<p>The most limiting factor for my choice of code editors is that I <em>need</em> modal editing. After learning how to use <a href="https://www.gnu.org/software/emacs/">Emacs</a>, and then <a href="https://www.vim.org/">Vim</a>, I can not imagine going back to the typical non-modal text editing. These editors make it much more comfortable to edit text (and code), and ruined every other way of editing for me.</p>
+<p>Now when I try a new editor or IDE the first thing I do is find a Vim emulation extension. Usually, the extension cannot fully support that style of editing because the editor wasn’t built with that type of editing in mind, which eventually makes me frustrated enough to go back to Vim.</p>
+<p>I will then use Vim for a couple of days, trying to set up a good environment for what I need, but it inevitably fails and I go back to using an editor like <a href="https://code.visualstudio.com/">VSCode</a>, that has a &ldquo;good enough&rdquo; Vim emulation plugin.</p>
+<p>I’ve even gone so far as to try wrappers for Vim like <a href="https://github.com/onivim/oni">Oni</a> and <a href="https://github.com/daa84/neovim-gtk">neovim-gtk</a>, but there are always some issues. Inevitably there will be something that makes it so unappealing that I go back to something else like VSCode.</p>
+<p>And I hate that. I don’t like using VSCode - I don’t hate it either - but I’m stuck with it because it’s the best editor that’s out there. I don’t like the Vim emulation extension, because it’s often slow, and it doesn’t perfectly replicate the utility of Vim. The best Vim emulation extension I’ve come across is - oddly enough - in <a href="https://doc.qt.io/qtcreator/">QtCreator</a>. If only I could use QtCreator for everything…</p>
+<h2 id="what-_i_-think-a-good-editor-should-have">What <em>I</em> think a good editor should have</h2>
+<h3 id="modal-editing-first">Modal editing first</h3>
+<blockquote>
+<p>Modal editing should be the first priority; &ldquo;normal&rdquo; editing should come after.</p>
+<p>Me, myself, and I</p>
+</blockquote>
+<p>Modal editing makes repetitive tasks while editing code <em>so easy</em> to perform. Now, you might be thinking “why would I want to repeat editing tasks while writing code?”. Well, you won’t want it for <em>writing</em> code, you’ll want it for <em>editing</em>. Deleting multiple lines, writing on multiple lines at once, multiple selections, editing multiple lines that aren’t necessarily in sequence and at different columns, etc., etc.</p>
+<p>Besides, &ldquo;normal&rdquo; editing is just a mode in modal editing. If you don&rsquo;t want the modal editing enabled, just disable it. The editor already supports a normal editing mode - that&rsquo;s how you write most of the time after all - and that should make this configuration trivial.</p>
+<p>Editors that do this well are editors like Vim and <a href="http://kakoune.org/">Kakoune</a>, and - in my opinion - Emacs, but to a lesser extent.</p>
+<h3 id="a-modern-_graphical_-ui">A modern, <em>graphical</em> UI</h3>
+<p>Terminal editors are out of date. By this I don’t mean that they’re obsolete; I mean their user experience is lagging far behind modern standards. Using editors like Vim and Emacs is not a good experience for the user. The user interface <em>sucks</em>.</p>
+<p>I know there are some crazies out there that do everything in a terminal - I mean have you heard of the operating system called Emacs? It&rsquo;s great, but despite being decades old, <em>still</em> lacks a decent text editor. In all seriousness though, a terminal does not a pleasant user experience make.</p>
+<p>You’ll see many Vim/Emacs users argue that you’re faster by getting used to working only with the keyboard to control the UI. Sure, you might gain a few milliseconds in specific cases, but that’s not how anyone works today. Using the mouse is comfortable, intuitive, and <em>easy</em>. Using a terminal editor that doesn’t properly support doing everything with a mouse just doesn’t hold up in today’s environment of graphical software.</p>
+<p>Of course, when a terminal is all you have, these editors are amazing. But that doesn’t change the fact that the UI is <em>horrible</em>, and far from being modern.</p>
+<p>Just look at editors like <a href="https://atom.io/">Atom</a>, <a href="https://code.visualstudio.com/">VSCode</a>, and <a href="https://www.sublimetext.com/">Sublime Text</a>. All of these editors come with excellent UIs that make editing multiple files - working on a <em>project</em>, not just a file - an easier experience. The way these editors achieve this is through graphical representation of the project hierarchy - the file sidebar - and many other quality of life improvements - like being able to use your mouse!</p>
+<h3 id="support-user-made-extensions">Support user made extensions</h3>
+<p>Most text editors have this today, but making extension development easy, and making it easy for users to find and install extensions, is a tricky problem to solve. VSCode and Atom have clearly figured out a way that works for those editors. It’s easy to search for, and install, any extension you might want.</p>
+<p>Relative to those editors, Vim and Emacs make this very difficult. You need to either install a package manager, and then the extension, or install every extension manually. The process is a pain, even when you get it right.</p>
+<p>When it comes to extensions the following tasks <em>must</em> be easy:</p>
+<ol>
+<li>Searching for extensions</li>
+<li>Installing extensions</li>
+</ol>
+<p>An easy way to search for extensions is important because easy discoverability is the key to getting users to use extensions. Easy installation - as in no more than 1 click after finding the extension - is equally important so users will not only search for extensions, but actually <em>use</em> them.</p>
+<p>It is, of course, important to design the text editor with all this in mind, and some way to allow extensions to interact with the editor.</p>
+<h3 id="smart-auto-complete">Smart auto-complete</h3>
+<p>This is simple. I want <a href="https://code.visualstudio.com/docs/editor/intellisense">IntelliSense</a> everywhere. <em>Built in</em>. Is that so much to ask?</p>
+<h3 id="peek-at-implementationdefinition">Peek at implementation/definition</h3>
+<p>Being able to peek at a function implementation to see what it does makes it so much easier to work with code! You don’t have to remove yourself from your current context to find another file, locate the function, see what it does, navigate back to where you where, and get back to work. <a href="https://www.jetbrains.com/idea/">IntelliJ</a> really has this one figured out.</p>
+<h3 id="fast-and-responsive">Fast and responsive</h3>
+<p>I don’t mind <a href="https://electronjs.org/">Electron</a> apps, when they work properly and feel responsive. I happily use programs like <a href="https://simplenote.com/">Simplenote</a>, <a href="https://tutanota.com/">Tutanota</a>, and <a href="https://signal.org">Signal</a> all the time, because they don’t feel sluggish and unresponsive.</p>
+<p>Programs like <a href="https://www.spotify.com/us/download/linux/">Spotify</a>, Atom, and VSCode however, <em>do</em> feel sluggish and unresponsive at times. It takes a while to load large files. Scrolling halts. Loading the syntax highlighting takes a while. It just feels <em>slow</em>. Not to mention they also use a lot of memory and system resources, even more so than your average Electron app. If they have access to all of that memory and computing power, surely they should be able to run without lagging right?</p>
+<h3 id="all-of-these-should-come-out-of-the-box">All of these should come out of the box</h3>
+<p>I’m sure I could spend days setting up the perfect Vim environment, but my question is why should I have to do that? Having all of these come out of the box shouldn’t be that hard in 2019. Some editors have perfect implementations of at least one of the features I want, so an editor that has all of these is clearly not an impossible feat. Why has no one made one yet?</p>
+<h2 id="there-is-hope">There is hope</h2>
+<p>I&rsquo;m actually very excited to see where new editors like <a href="https://github.com/xi-editor/xi-editor">Xi</a> and <a href="https://v2.onivim.io/">Oni2</a> will end up. Specifically I’m actively following the discussions surrounding new frontends for Xi, as well as their <a href="https://github.com/xi-editor/xi-editor/issues/302">open issue on modal editing</a>.</p>
+<p>I’ve even thought about just doing this myself, but so far I haven’t found the motivation and time to actively work on a big undertaking like creating a text editor I like.</p>
+<p>I can only hope someone will see the light and save us all sometime soon.</p>
+
+    </article>
+</main>
+
+    </body>
+    <footer>
+    <hr />
+    <p>
+        <small>
+            Made with ♥ for the web |
+            <a href="/index.xml">rss</a>
+        </small>
+    </p>
+    <p><small>This website collects analytics via <a href="https://tot.goatcounter.com/">GoatCounter</a>. Analytics don't use cookies, and don't collect <a href="https://en.wikipedia.org/wiki/Personal_data">PII</a>.</small></p>
+</footer>
+
+</html>

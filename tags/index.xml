@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on thoughts on things</title>
+    <link>https://reykjalin.github.io/tags/</link>
+    <description>Recent content in Tags on thoughts on things</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Feb 2020 06:13:59 +0000</lastBuildDate>
+    
+	<atom:link href="https://reykjalin.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>f#</title>
+      <link>https://reykjalin.github.io/tags/f#/</link>
+      <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/f#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fable</title>
+      <link>https://reykjalin.github.io/tags/fable/</link>
+      <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/fable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fsharp</title>
+      <link>https://reykjalin.github.io/tags/fsharp/</link>
+      <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/fsharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>interop</title>
+      <link>https://reykjalin.github.io/tags/interop/</link>
+      <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/interop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>https://reykjalin.github.io/tags/javascript/</link>
+      <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://reykjalin.github.io/tags/programming/</link>
+      <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>typescript</title>
+      <link>https://reykjalin.github.io/tags/typescript/</link>
+      <pubDate>Wed, 05 Feb 2020 06:13:59 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/typescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>editors</title>
+      <link>https://reykjalin.github.io/tags/editors/</link>
+      <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/editors/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emacs</title>
+      <link>https://reykjalin.github.io/tags/emacs/</link>
+      <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://reykjalin.github.io/tags/vim/</link>
+      <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vscode</title>
+      <link>https://reykjalin.github.io/tags/vscode/</link>
+      <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/vscode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>xi</title>
+      <link>https://reykjalin.github.io/tags/xi/</link>
+      <pubDate>Fri, 27 Sep 2019 10:02:22 +0000</pubDate>
+      
+      <guid>https://reykjalin.github.io/tags/xi/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
